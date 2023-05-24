@@ -6,5 +6,8 @@ public class SingletonDemo {
 
         EagerSingleton eagerSingleton = EagerSingleton.getInstance();
         eagerSingleton.showMessage();
+
+        LazySingleton lazySingleton = LazySingleton.getInstance();
+        lazySingleton.showMessage();
     }
 }
