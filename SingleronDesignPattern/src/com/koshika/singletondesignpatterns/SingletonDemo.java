@@ -12,5 +12,8 @@ public class SingletonDemo {
 
         StaticSingleton staticSingleton = StaticSingleton.getInstance();
         staticSingleton.showMessage();
+
+        ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.getInstance();
+        threadSafeSingleton.showMessage();
     }
 }
