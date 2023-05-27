@@ -1,4 +1,4 @@
-package com.koshika.designpatterns;
+package com.koshika.singletondesignpatterns;
 
 public class LazySingleton {
 
