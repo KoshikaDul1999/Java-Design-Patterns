@@ -1,5 +1,7 @@
 package com.koshika.factorydesignpatterns;
 
+//3.Create the Factory to generate objects of the concrete class
+// based on the request
 public class ShapeFactory {
     public Shape getShape(String name){
         if(name == null){
