@@ -2,6 +2,10 @@ package com.koshika.abstractfactorydesignpatterns;
 
 public class ColorFactory extends AbstractFactory{
     @Override
+    Shape getShape(String shapeType) {
+        return null;
+    }
+    @Override
     Color getColor(String colorType) {
         if(colorType == null){
             return null;
