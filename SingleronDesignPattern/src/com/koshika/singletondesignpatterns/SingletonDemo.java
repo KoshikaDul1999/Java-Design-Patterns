@@ -15,5 +15,7 @@ public class SingletonDemo {
 
         ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.getInstance();
         threadSafeSingleton.showMessage();
+
+
     }
 }
