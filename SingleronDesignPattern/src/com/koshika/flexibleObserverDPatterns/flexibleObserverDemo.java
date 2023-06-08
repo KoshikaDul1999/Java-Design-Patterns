@@ -6,6 +6,6 @@ public class flexibleObserverDemo {
         Student student = new Student("Koshika");
 
         admin.addOberver(student);
-        admin.notifyObserver();
+        admin.sendMessage();
     }
 }
