@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Admin implements AdminObserverble{
 
     ArrayList<StudentObserver> studentObserverArrayList = new ArrayList<>();
+
+    private String msg;
     @Override
     public void addOberver(StudentObserver studentObserver) {
         studentObserverArrayList.add(studentObserver);
@@ -17,6 +19,8 @@ public class Admin implements AdminObserverble{
 
     @Override
     public void notifyObserver() {
-
+        for(StudentObserver studentObserver : studentObserverArrayList){
+            studentObserver.update(msg);
+        }
     }
 }
