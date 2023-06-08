@@ -1,14 +1,18 @@
 package com.koshika.flexibleObserverDPatterns;
 
+import java.util.ArrayList;
+
 public class Admin implements AdminObserverble{
+
+    ArrayList<StudentObserver> studentObserverArrayList = new ArrayList<>();
     @Override
     public void addOberver(StudentObserver studentObserver) {
-
+        studentObserverArrayList.add(studentObserver);
     }
 
     @Override
     public void removeObserver(StudentObserver studentObserver) {
-
+        studentObserverArrayList.remove(studentObserver);
     }
 
     @Override
